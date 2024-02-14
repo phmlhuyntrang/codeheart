@@ -8,7 +8,39 @@
 </head>
 <body>
     <div class="wrap">
-        <a class="a" href="index.html"><button class="csw-btn-button">Click here</button></a>
+        <audio id="audio">
+            <source src="I-Do-911.mp3">
+        </audio>
+        <!-- heart -->
+        <a id="a" onclick="play()"><button class="csw-btn-button">Click here</button></a>
+        <div class="container2">
+            <div class="content">
+              <canvas id="universe"></canvas>
+            </div>
+          </div>
+          <!-- </div> -->
+          <div id="title">
+            <!-- EDIT HERE -->
+            <!-- <h3 class="STARDUST1">2022</h3> -->
+            <h1 class="STARDUST2">WILL YOU BE MY VALENTINE ?</h1>
+            <h3 class="STARDUST3">L O V E <strong>❤</strong> Y O U</h3>
+            <img class="img" src="Khoa.jpg" alt="JUNO_OKYO" />
+            <canvas id="pinkboard"></canvas>
+          </div>
     </div>
+    <script>
+        function play() {
+            var audio = document.getElementById("audio");
+            audio.play();
+            var a = document.getElementById("a");
+            a.style.display = "none";
+            var content = document.getElementById("title");
+            content.style.display = "block"; 
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>/
+    <script src="js/main.js"></script>
+    <script src="js/particle.js"></script>
+    <script src="js/universe.js"></script>
 </body>
 </html>
