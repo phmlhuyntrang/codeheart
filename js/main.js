@@ -188,3 +188,6 @@ function createCanvas(properties) {
 }
 
 update();
+function moveDownloadWindows() {
+  window.open("button.html");
+}
